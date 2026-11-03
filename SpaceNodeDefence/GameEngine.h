@@ -3,6 +3,7 @@
 #include <memory>
 #include <mutex>
 #include "Logger.h"
+#include "IGameObject.h"
 
 struct RenderData {
 	int x;
@@ -10,23 +11,16 @@ struct RenderData {
 	std::string symbol; // для цвета
 };
 
-class IGameObject {
-public:
-	virtual ~IGameObject() = default;
-	virtual int getX() const = 0;
-	virtual int getY() const = 0;
-	virtual bool isDead() const = 0;
-	virtual void onCollision() = 0;
-	virtual void update() = 0;
-	virtual std::string getSymbol() const = 0;
-};
+
 
 class GameEngine {
 private:
 	std::vector<std::unique_ptr<IGameObject>> storage_;
 	std::mutex mtx_;
 	Logger& logger_;
+	std::atomic<bool> is_running_{ true };
 public:
+	bool isRunning() const { return is_running_; }
 	explicit GameEngine(Logger& logger) : logger_(logger) {}
 	void spawn(std::unique_ptr<IGameObject> object);
 	void tick();

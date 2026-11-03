@@ -26,8 +26,15 @@ void GameEngine::tick()
 			}
 		}
 	}
-	std::erase_if(storage_, [](const std::unique_ptr<IGameObject>& obj) {
-		return obj->isDead();
+	std::erase_if(storage_, [this](const std::unique_ptr<IGameObject>& obj) {
+		if (obj->isDead()) {
+			if (obj->isPlayer())
+			{
+				is_running_ = false;
+			}
+			return true;
+		}
+		return false;
 		});
 
 }
