@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpaceNodeDefence", "SpaceNodeDefence\SpaceNodeDefence.vcxproj", "{2984C5E6-C9CD-482A-82BF-C058723346CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Debug|x64.ActiveCfg = Debug|x64
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Debug|x64.Build.0 = Debug|x64
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Debug|x86.ActiveCfg = Debug|Win32
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Debug|x86.Build.0 = Debug|Win32
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Release|x64.ActiveCfg = Release|x64
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Release|x64.Build.0 = Release|x64
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Release|x86.ActiveCfg = Release|Win32
+		{2984C5E6-C9CD-482A-82BF-C058723346CA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC58A80B-E446-47E3-85C8-DA3334E997F7}
+	EndGlobalSection
+EndGlobal
